@@ -1,38 +1,82 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: #121212;
+}
+.Header{
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+.Header > h1 {
+  font-weight: 400;
+  color: #03a9f4;
+  padding-left: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.Input{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Input > form {
+  display: flex;
+  margin: auto;
+}
+.Input > form > input {
+  width: 300px;
+  border: none;
+  background-color: #232323;
+  color: #03a9f4;
+  outline: none;
+  padding: 10px;
+  border-bottom-left-radius: 0.3rem;
+  border-top-left-radius: 0.3rem;
+  letter-spacing: 0.06rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Input > form > button {
+  width: 80px;
+  border: none;
+  background-color: #232323;
+  color: #03a9f4;
+  outline: none;
+  padding: 10px;
+  border-left: 1px solid #03a9f4;
+  border-bottom-right-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  cursor: pointer;
+  letter-spacing: 0.06rem;
+}
+.Input > form > button:hover {
+  background-color: #2f2f2f;
+}
+
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 400px;
+  height: 600px;
+  margin: 0 30px 30px 0px;
+  background-color: #232323;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+  font-weight: 400;
+  letter-spacing: 0.08rem;
 }

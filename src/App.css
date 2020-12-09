@@ -79,4 +79,26 @@
   color: #eee;
   font-weight: 400;
   letter-spacing: 0.08rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.card > .cardHead > h2 {
+  letter-spacing: 0.08rem;
+  color: #03a9f4;
+  font-weight: 400;
+
+}
+
+.card > .cardBot > p {
+  letter-spacing: 0.09rem;
+  font-size: 1.2rem;
+}
+
+.card > .cardBot > p > span {
+  color: #03a9f4;
 }

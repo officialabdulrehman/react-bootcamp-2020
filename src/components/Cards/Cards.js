@@ -3,14 +3,11 @@ import React, { useEffect } from "react";
 import Card from "./Card/Card";
 // import { data } from "../../data/dummy";
 
-export default function Cards({data}) {
-  useEffect(() => {
-
-  })
+export default function Cards({recipes}) {
   return (
     <div className='cards'>
-      {data == [] && data.map((card, index) => (
-        <Card key={index} cardData={card}/>
+      {recipes.map((recipe, index) => (
+        <Card key={index} recipe={recipe}/>
       ))}
     </div>
   );

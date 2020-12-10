@@ -17,8 +17,9 @@
 }
 .Header > h1 {
   font-weight: 400;
-  color: #29b6f6;
+  color: #4fc3f7;
   padding-left: 50px;
+  cursor: default;
 }
 
 .Input{
@@ -36,7 +37,7 @@
   width: 300px;
   border: none;
   background-color: #232323;
-  color: #29b6f6;
+  color: #4fc3f7;
   outline: none;
   padding: 10px;
   border-bottom-left-radius: 0.3rem;
@@ -48,10 +49,10 @@
   width: 80px;
   border: none;
   background-color: #232323;
-  color: #29b6f6;
+  color: #4fc3f7;
   outline: none;
   padding: 10px;
-  border-left: 1px solid #29b6f6;
+  border-left: 1px solid #4fc3f7;
   border-bottom-right-radius: 0.3rem;
   border-top-right-radius: 0.3rem;
   cursor: pointer;
@@ -95,7 +96,7 @@
   /* font-size: 0.5rem; */
   font-weight: 400;
   letter-spacing: 0.03rem;
-  color: #29b6f6;
+  color: #4fc3f7;
 }
 .card_heading > h3,
 .card_heading > h4 {
@@ -120,7 +121,7 @@
 
 .card_foot > h4{
   margin: 10px 0 5px 0;
-  color: #29b6f6;
+  color: #4fc3f7;
   font-weight: 400;
   letter-spacing: 0.08rem;
 }
@@ -132,7 +133,7 @@
 
 span{
   font-weight: 600;
-  color: #29b6f6;
+  color: #4fc3f7;
 }
 
 .footer1 {
@@ -145,11 +146,19 @@ span{
   width: 85%;
 }
 .seemore{
-  color: #29b6f6;
+  color: #4fc3f7;
   cursor: pointer;
   padding: 5px;
 }
 .bookmark{
   cursor: pointer;
   justify-self: flex-start;
+}
+
+.loader{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4fc3f7;
+  margin: 40px auto;
 }

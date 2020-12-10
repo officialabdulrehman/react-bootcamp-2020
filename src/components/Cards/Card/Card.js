@@ -3,6 +3,25 @@ import React from "react";
 import { ReactComponent as BookmarkEmpty } from "../../../svg/bookmarkEmpty.svg";
 import { ReactComponent as BookmarkFilled } from "../../../svg/bookmarkFilled.svg";
 
+import {motion} from 'framer-motion'
+
+const cardVariants = {
+  hidden: {
+    opacity: 0,
+    x: '100vw'
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.5,
+      delay: 0.2,
+      type: 'tween',
+      ease: 'easeInOut',
+    }
+  }
+}
+
 export default function Card(props) {
   const { label, calories, image, totalTime, ingredientLines } = props.recipe.recipe;
   console.log(props);
@@ -20,7 +39,12 @@ export default function Card(props) {
   //   </div>
   // )
   return (
-    <div className="card">
+    <motion.div 
+      className="card"
+      variants={cardVariants}
+      initial='hidden'
+      animate='visible'
+      >
       <div className="card_heading">
         <h3>{label}</h3>
         <h4>
@@ -58,6 +82,6 @@ export default function Card(props) {
           {calories.toFixed(2)}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }

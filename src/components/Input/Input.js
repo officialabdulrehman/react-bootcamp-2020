@@ -7,7 +7,7 @@ export default function Input(props) {
   return (
     <div className='Input'>
       <form onSubmit={onSubmitHandler}>
-        <input  onChange={onChangeHandler}/>
+        <input value={query} onChange={onChangeHandler}/>
         <button type='submit'>Search</button>
       </form>
     </div>

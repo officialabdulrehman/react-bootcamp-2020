@@ -6,7 +6,7 @@ import Cards from './components/Cards/Cards';
 import Header from './components/Header/Header'
 import Input from './components/Input/Input'
 
-//import { APP_KEY, APP_ID } from './sensitive'
+import { APP_KEY, APP_ID } from './sensitive'
 
 export default function App() {
   const [search, setSearch] = useState("");
